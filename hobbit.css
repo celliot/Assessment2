@@ -1,0 +1,92 @@
+body {
+	background-color: black;
+}
+
+div.page {
+	position: relative;
+}
+
+a {
+  color: #e95a22;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+ #registration {
+	position: relative;
+	float: right;
+ }
+ 
+ #signin {
+	float: left;
+	padding-right: 10px;
+ }
+ 
+ #register {
+	float: right;
+	padding-left: 10px;
+ }
+ 
+
+img#logo {
+	display: block;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	float: left;
+}
+
+.writing {
+	color: #e95a22;
+	position: absolute;
+}
+
+.header {
+	position: relative;
+	max-height: 65px;
+	padding-bottom: 0px;
+}
+}
+
+a.menubarbtn {
+	outline: none;
+}
+
+div#menubar {
+	position: relative;
+	display: table;
+	font-family: 'Leo Arrow';
+	font-weight: normal;
+	font-style: normal; 
+	float: left;
+	padding-top:65px;
+	padding-left: 100px;
+}
+#currentFrame {
+	height: 490px;
+	width: 100%;
+	position: relative;
+}
+
+div#menubar ul li {
+	display: inline; 
+	padding: 8px;
+}
+
+.footer {
+	position: relative;
+}
+
+.creditsContainer {
+	position: relative;
+}
+
+img#credits {
+	display: block;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
