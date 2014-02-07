@@ -6,44 +6,14 @@
 	<title>The Hobbit: The Desolation of Smaug</title>
 	<link rel="stylesheet" href="hobbit.css" type="text/css" />
 	<link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/leo-arrow" type="text/css" /> 
-<script type="text/javascript">
-
-	function loadHome() {
-		document.getElementById("currentFrame").src = 'Main.html';
-		return false;
-	}
-	
-	function loadCastCrew(){
-		document.getElementById("currentFrame").src = 'castCrew.html';
-		return false;
-	}
-	
-	function loadGallery() {
-		document.getElementById("currentFrame").src = 'gallery.html';
-		return false;
-	}
-	
-	function loadShopping() {
-		document.getElementById("currentFrame").src = 'shopping.html';
-		return false;
-	}
-	
-	function loadVideos(){
-		document.getElementById("currentFrame").src = 'videos.html';
-		return false;
-	}
-	
-	function loadHallofFame(){
-		document.getElementById("currentFrame").src = 'hallofFame.html';
-		return false;
-	}
-</script>
+	<script type="text/javascript" src="Scripts/main.js"></script>
+	<script type="text/javascript" src="Scripts/jquery-1.11.0.js"></script>
 </head>
 <body onload="loadHome()">
 <div class="page">
 	<div class="header">
 		<div id="registration">
-			<a id="signin" href="#">Sign In</a>
+			<a id="signin" href="#" onclick="loadSignIn()">Sign In</a>
 			<a id="register" href="register.html">Register</a>
 		</div>
 		<a href="#" onclick="loadHome()"><img id="logo" src="Images/logo.png" alt="The Hobbit Logo" /></a>

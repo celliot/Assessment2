@@ -9,6 +9,15 @@ body {
 	font-style: normal; 
 }
 
+label, input {
+  display: inline-block;
+}
+label {
+  color: #e95a22;
+  min-width: 80px;
+  
+}
+
 .pageRegister {
 	position: absolute;
 	padding-left: 30px;
