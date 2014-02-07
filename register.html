@@ -9,13 +9,13 @@
 </head>
 <body>
 <div class="pageRegister">
-	<form class="registrationForm" action="registration.txt">
+	<form class="registrationForm" method="post" action="register.php">
 	<p>First Name:<br /><input class="formFieldText" type="text" name="firstname" /><br /></p>
 	<p>Surname:<br /><input class="formFieldText" type="text" name="surname" /><br /></p>
 	<p>User Name:<br /><input class="formFieldText" type="text" name="username" /><br /></p>
 	<p>Password:<br /><input class="formFieldText" type="password" name="pwd" /><br /></p>
 	<p>Date of birth:</p>
-	<p>Day:<br /><select>
+	<p>Day:<br /><select name="mob">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -69,7 +69,7 @@
 	
 	<p>Address:<br /><textarea class="formField" rows="5" cols="50" name="address"></textarea><br /></p>
 	<p>Membership Type:<br />
-	<select class="formField">
+	<select class="formField" name="membershipType">
 		<option value="Basic">Basic</option>
 		<option value="Bronze">Bronze</option>
 		<option value="Silver">Silver</option>
@@ -77,13 +77,13 @@
 		<option value="Platinum">Platinum</option>
 	</select><br /></p>
 	<p>Duration of Membership:<br />
-	<select class="formField">
+	<select class="formField" name="memberDuration">
 		<option value="Annual">Annual</option>
 		<option value="5 Years">5 Years</option>
 		<option value="10 Years">10 Years</option>
 		<option value="Lifetime">Lifetime</option>
 	</select><br /></p>
-	<p><input type="submit" value="Submit" /></p>
+	<p><input type="submit" value="Submit">Submit</input></p>
 	</form>
 </div>
 </body>
