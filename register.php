@@ -1,6 +1,4 @@
 <?php
-	//var_dump($_POST);
-	
 	$notSet = array();
 	
 	if (empty($_POST['firstname'])){
@@ -17,12 +15,11 @@
 	}
 	if (empty($_POST['email'])){
 		$notSet['email'] = '<strong>email is a required field</strong>';
-	} elseif (!ereg($_POST['email'], '^[a-zA-Z0-9_\.]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$')) {
+	}/* elseif (!ereg($_POST['email'], '^[a-zA-Z0-9_\.]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$')) {
 		$notSet['email'] = '<strong>invalid email address, please try again</strong>';
-	}
+	}*/
 	
 	if(!empty($notSet)) {
-		echo 'required fields not set';
 		$registrationPage = file('register.html');
 		foreach($notSet as $key => $value) {
 			for($j = 0; $j < count($registrationPage); ++$j){
@@ -36,7 +33,9 @@
 			echo $registrationPage[$j];
 		}
 	} else {
-		//send all data to a file
+		$userFile = fopen('Users\\users.txt', 'a');
+		fwrite($userFile, print_r($_POST, true)."\r\n");
+		fclose($userFile);
 	}
 /*
 	$_POST['firstname'];
