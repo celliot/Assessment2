@@ -6,7 +6,7 @@
 				return $allUsers[$i];
 			}
 		}
-		return false;
+		return array();
 	}
 	
 	function getUsers() {
