@@ -32,4 +32,6 @@ function loadHome() {
 		document.getElementById("currentFrame").src = 'login.html';
 		return false;
 	}
-	
+	function goIndex() {
+		window.location.replace("index.php");
+	}

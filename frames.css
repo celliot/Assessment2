@@ -12,9 +12,10 @@ body {
 label, input {
   display: inline-block;
 }
-label {
+
+label.login {
   color: #e95a22;
-  min-width: 80px;
+  min-width: 125px;
   
 }
 
@@ -77,8 +78,8 @@ img#background {
 	margin-right: auto;
 }
 
-ul li {
-	display: inline; 
+ul {
+	display: inline-block; 
 	padding: 8px;
 }
 
