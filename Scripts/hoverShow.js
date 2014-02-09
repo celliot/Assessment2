@@ -4,14 +4,18 @@
 	}
 
 	function setPosition(display) {
-		display.style.left = "100px";
+		display.style.left = "500px";
 		display.style.top = "10px";
     }
 	
     function ShowContent(ident) {
 		if(ident.length < 1) { return; }
+		showing = document.getElementById("showingCast");
+		showing.style.display = "none";
+		showing.setAttribute("id", showing.getAttribute("name"));
 		var tag = document.getElementById(ident);
 		setPosition(tag);
+		tag.setAttribute("id", "showingCast");
 		tag.style.display = "block";
     }
 	
