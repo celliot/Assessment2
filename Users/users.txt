@@ -1,27 +1,66 @@
-Array
-(
-    [firstname] => Christopher
-    [surname] => Elliot
-    [username] => atlaconspire
-    [pwd] => intercom99
-    [mob] => 27
-    [yob] => 1985
-    [genderMale] => on
-    [email] => christopher.m.elliot@gmail.com
-    [address] => 4 Bent St, Kensington, VIC 3031
-    [membershipType] => Basic
-    [memberDuration] => Annual
-)Array
-(
-    [firstname] => Christopher
-    [surname] => Elliot
-    [username] => atlaconspire
-    [pwd] => intercom99
-    [mob] => 1
-    [yob] => 
-    [email] => christopher.m.elliot@gmail.com
-    [address] => 
-    [membershipType] => Basic
-    [memberDuration] => Annual
-)
+firstname name
+surname secondName
+username user
+password passkey
+email address@email.com
+
+firstname name
+surname secondName
+username blorty
+password passkey
+email address@email.com
+
+firstname name
+surname secondName
+username pesky
+password passkey
+email address@email.com
+
+firstname name
+surname secondName
+username poompey
+password passkey
+email address@email.com
+
+firstname name
+surname secondName
+username pepsi
+password passkey
+email address@email.com
+
+firstname name
+surname secondName
+username tipsy
+password passkey
+email address@email.com
+
+firstname name
+surname secondName
+username willy
+password passkey
+email address@email.com
+
+firstname name
+surname secondName
+username blindy
+password passkey
+email address@email.com
+
+firstname name
+surname secondName
+username blinky
+password passkey
+email address@email.com
+
+firstname name
+surname secondName
+username quincie
+password passkey
+email address@email.com
+
+firstname name
+surname secondName
+username georgie
+password passkey
+email address@email.com
 

@@ -1,6 +1,7 @@
 <?php
 	function getUser($username, $password) {
 		$allUsers = getUsers();
+		
 		for($i = 0; $i < count($allUsers); ++$i) {
 			if ($allUsers[$i]["username"] == $username){
 				 if ($allUsers[$i]["password"] == $password) {
@@ -21,18 +22,27 @@
 		while (!feof($userFileRead)){
 			
 			$line = fgets($userFileRead);
-			if (ereg("^\[[a-zA-Z0-9]+\] => [a-zA-Z0-9]*$", $line)) {
-				$userInfo = explode(" ", $line);
-				$users[$userNum][substr($userInfo[0], 1, -1)] = $userInfo[2];
-			}
-			
-			if (strlen(trim($line)) == 0) {
+			$line = explode(" ", trim($line));
+			if (count($line) != 2){
 				++$userNum;
+				continue;
 			}
-			
+			$users[$userNum][$line[0]] = $line[1];
+					
 		}
 		fclose($userFileRead);
 		return $users;
 	}
+	
+	function putAfterLine($line, $match, $newLine) {
+		$success = false;
+		if (strpos($line, $match)){
+			echo $line;
+			echo $newLine;
+			$success = true;
+		}
+		return $success;
+	}
+
 	
 ?>

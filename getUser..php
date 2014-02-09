@@ -1,15 +1,17 @@
 <?php
 	function getUser($username, $password) {
 		$allUsers = getUsers();
+		$user = array();
 		for($i = 0; $i < count($allUsers); ++$i) {
 			if ($allUsers[$i]["username"] == $username){
-				 if ($allUsers[$i]["password"] == $password {
-					return $allUsers[$i];
+				 if ($allUsers[$i]["password"] == $password) {
+					$user = $allUsers[$i];
+					break;
 				}
-				return $allUsers[$i]["username"];
+				$user = $allUsers[$i]["username"];
 			}
 		}
-		return array();
+		return $user;
 	}
 	
 	function getUsers() {

@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<head>
+	<title>The Hobbit: The Desolation of Smaug</title>
+	<link rel='stylesheet' href='hobbit.css' type='text/css' />
+	<link rel='stylesheet' href='gallery.css' type='text/css' />
+	<link rel='stylesheet' media='screen' href='http://openfontlibrary.org/face/leo-arrow' type='text/css' /> 
+	<script type='text/javascript' src='Scripts/jquery-1.11.0.js'></script>
+	<script src='Scripts/hoverShow.js' type='text/javascript'></script>
+	<script src='Scripts/trailer.js' type='text/javascript'></script>
+</head>
+<body onload='loadHome()'>
+<div class='page'>
+	<div class='header'>
+		<div class='writing' id='registration'>
+			<!-- rego info dumped in by PHP -->
+		</div>
+		<a class="homeBtn" href='#' onclick='loadHome()'><img id='logo' src='Images/logo.png' alt='The Hobbit Logo' /></a>
+		<div id='menubar' class='writing'>
+		<ul>
+			<li><a class='homeBtn' href='#'>Home</a></li>
+			<li><a id='castCrewBtn' class='menubarbtn' href='#'>Cast &amp; Crew</a></li>
+			<li><a id='galleryBtn' class='menubarbtn' href='#'>Gallery</a></li>
+			<li><a id='shoppingBtn' class='menubarbtn' href='#'>Shopping</a></li>
+			<li><a id='videosBtn' class='menubarbtn' href='#'>Videos</a></li>
+			<li><a id='hallBtn' class='menubarbtn' href='#'>Hall of Fame</a></li>
+		</ul>
+		</div>
+	</div>	
+	<div class='main'>
+	<div id='currentFrame'>
+		<div id='home'>
+			<img id='background' src='Images/SmaugFinished.png' alt='Image of the dragon Smaug' />
+		</div>
+		<div id='castCrew'>
+			<div id='title' class='writing'>
+			<div>
+				<table id='castTable'>
+				<tr>
+				<td><a onmouseover='ShowContent('gandalf'); return true;' onmouseout='HideContent('gandalf'); return true;' href='javascript:ShowContent('gandalf')'>Ian McKellen</a></td>
+				<td><a onmouseover='ShowContent('bilbo'); return true;' onmouseout='HideContent('bilbo'); return true;' href='javascript:ShowContent('bilbo')'>Martin Freeman</a></td>
+				</tr>
+				<tr>
+				<td><a onmouseover='ShowContent('thorin'); return true;' onmouseout='HideContent('thorin'); return true;' href='javascript:ShowContent('thorin')'>Richard Armitage</a></td>
+				<td><a onmouseover='ShowContent('balin'); return true;' onmouseout='HideContent('balin'); return true;' href='javascript:ShowContent('balin')'>Ken Scott</a></td>
+				</tr>
+				<tr>
+				<td><a onmouseover='ShowContent('dwalin'); return true;' onmouseout='HideContent('dwalin'); return true;' href='javascript:ShowContent('dwalin')'>Graham McTavish</a></td>
+				<td><a onmouseover='ShowContent('bifur'); return true;' onmouseout='HideContent('bifur'); return true;' href='javascript:ShowContent('bifur')'>William Kircher</a></td>
+				</tr>
+				<tr>
+				<td><a onmouseover='ShowContent('bofur'); return true;' onmouseout='HideContent('bofur'); return true;' href='javascript:ShowContent('bofur')'>James Nesbitt</a></td>
+				<td><a onmouseover='ShowContent('bombur'); return true;' onmouseout='HideContent('bombur'); return true;' href='javascript:ShowContent('bombur')'>Stephen Hunter</a></td>
+				</tr>
+				<tr>
+				<td><a onmouseover='ShowContent('fili'); return true;' onmouseout='HideContent('fili'); return true;' href='javascript:ShowContent('fili')'>Dean O'Gorman</a></td>
+				<td><a onmouseover='ShowContent('kili'); return true;' onmouseout='HideContent('kili'); return true;' href='javascript:ShowContent('kili')'>Aidan Turner</a></td>
+				</tr>
+				<tr>
+				<td><a onmouseover='ShowContent('oin'); return true;' onmouseout='HideContent('oin'); return true;' href='javascript:ShowContent('oin')'>John Callen</a></td>
+				<td><a onmouseover='ShowContent('gloin'); return true;' onmouseout='HideContent('gloin'); return true;' href='javascript:ShowContent('gloin')'>Peter Hambleton</a></td>
+				</tr>
+				<tr>
+				<td><a onmouseover='ShowContent('nori'); return true;' onmouseout='HideContent('nori'); return true;' href='javascript:ShowContent('nori')'>Jed Brophy</a></td>
+				<td><a onmouseover='ShowContent('dori'); return true;' onmouseout='HideContent('dori'); return true;' href='javascript:ShowContent('dori')'>Mark Hadlow</a></td>
+				</tr>
+				<tr>	
+				<td><a onmouseover='ShowContent('ori'); return true;' onmouseout='HideContent('ori'); return true;' href='javascript:ShowContent('ori')'>Adam Brown</a></td>
+				<td><a onmouseover='ShowContent('legolas'); return true;' onmouseout='HideContent('legolas'); return true;' href='javascript:ShowContent('legolas')'>Orlando Bloom</a></td>
+				</tr>
+				<tr>
+				<td><a onmouseover='ShowContent('tauriel'); return true;' onmouseout='HideContent('tauriel'); return true;' href='javascript:ShowContent('tauriel')'>Evangeline Lilly</a></td>
+				<td><a onmouseover='ShowContent('thranduil'); return true;' onmouseout='HideContent('thranduil'); return true;' href='javascript:ShowContent('thranduil')'>Lee Pace</a></td>
+				</tr>
+				<tr>
+				<td><a onmouseover='ShowContent('bard'); return true;' onmouseout='HideContent('bard'); return true;' href='javascript:ShowContent('bard')'>Luke Evans</a></td>
+				<td><a onmouseover='ShowContent('radagast'); return true;' onmouseout='HideContent('radagast'); return true;' href='javascript:ShowContent('radagast')'>Sylvester McCoy</a></td>
+				</tr>
+				<tr>
+				<td><a onmouseover='ShowContent('smaug'); return true;' onmouseout='HideContent('smaug'); return true;' href='javascript:ShowContent('smaug')'>Benedict Cumberbatch</a></td>
+				<td><a onmouseover='ShowContent('azog'); return true;' onmouseout='HideContent('azog'); return true;' href='javascript:ShowContent('azog')'>Manu Bennett</a></td>
+				</tr>
+				<tr>
+				<td><a onmouseover='ShowContent('bolg'); return true;' onmouseout='HideContent('bolg'); return true;' href='javascript:ShowContent('bolg')'>Lawrence Makoare</a></td>
+				</tr>
+				</table>
+ 				<div id='gandalf' class='castCrew' >
+    			<div>Ian McKeller as Gandalf the Grey:</div>
+				<br />
+				<img src='Images/gandalv.jpg' class='backgroundImage' alt='Gandalf' />
+				<div>Ian McKellen, born and raised in the north of England, has been honored with over 50 international acting awards during his more than half a century on stage and screen. He is beloved by fans worldwide as Magneto in the 'X-Men' films and Gandalf in 'The Lord of the Rings' and 'The Hobbit' trilogies.</div>
+				</div>
+				<div id='bilbo' class='castCrew'>Martin Freeman as Bilbo Baggins: 
+				<img src='Images/bilbo.jpg' class='backgroundImage' alt='Bilbo' />	
+				<div>Martin John C. Freeman (born 8 September 1971) is an English actor. He is known for his roles as Tim Canterbury in the BBC's Golden Globe-winning comedy The Office, John in Love Actually, Arthur Dent in the film adaptation of Douglas Adams' The Hitchhiker's Guide to the Galaxy, Dr. Watson in Sherlock and Paul Maddens in Nativity! He has been cast in the lead role of Bilbo Baggins in Peter Jackson's three-part adaptation of The Hobbit.<br /><i>- Biography Source: wikipedia.org, License: Attribution-ShareAlike 3.0</i></div>
+				</div>
+				<div id='thorin' class='castCrew'>Richard Armitage as Thorin Oakenshield:
+				<img src='Images/thorin.jpg' class='backgroundImage' alt='Thorin' />
+				<div>Richard Armitage's first appearance on the screen was in 'This Year's Love' (1999), but it was Sparkhouse (2002) that gave him a break-through role as the charming, character of John Standring opposite Sarah Smart. After two guest-roles in Cold Feet (1997) in 2003 and Between the Sheets (2003), he landed a role as Steven in Frozen (2005), which eventually led him to play the lead role in the big hit BBC drama North &amp; South (2004).<br /><i>- IMDb Mini Biography By: Jen</i></div>
+				</div>
+				<div id='balin' class='castCrew'>Ken Scott as Balin: 
+				<img src='Images/balin.jpg' class='backgroundImage' alt='Balin' />
+				<div>Ken Stott was born in 1955 in Edinburgh, Scotland. He is an actor, known for The Hobbit: An Unexpected Journey (2012), The Hobbit: The Desolation of Smaug (2013) and Shallow Grave (1994).<br /><i>-IMDb</i></div>
+				</div>
+				<div id='dwalin' class='castCrew'>Graham McTavish as Dwalin: 
+				<img src='Images/dwalin.jpg' class='backgroundImage' alt='Dwalin' />
+				<div>Graham McTavish is a Scottish television, film, and voice actor. McTavish has also had many supporting roles in British dramas and films such as Casualty, Jekyll, The Bill, Taggart, and Sisterhood. He also played the ill-tempered Mercenary Commander Lewis in Rambo alongside Sylvester Stallone.<br /><i>- IMDb Mini Biography By: Trask </i></div>
+				</div>
+				<div id='bifur' class='castCrew'>
+    			William Kircher as Bifur: 
+				<img src='Images/bifur.jpg' class='backgroundImage' alt='Bifur' />
+				<div>William Kircher graduated from NZ Drama School aged only 18, having lied about his age when applying two years before. He began a busy theatre career that has been interrupted by occasional screen acting roles, and later a move into behind the scenes work.<br /><i>- IMDb Mini Biography By: www.nzonscreen.com</i></div>
+				</div>
+				<div id='bofur' class='castCrew'>James Nesbitt as Bofur: 
+				<img src='Images/bofur.jpg' class='backgroundImage' alt='Bofur' />
+				<div>Educated at Coleraine Academical Institution (also school of Brian Campbell &amp; Brian McAlister), James had no interest in acting, concentrating on his French studies. It was not until teacher Robert Simpson encouraged him to take an apprenticeship at the local Riverside Theatre that his interest began, eventually leading him to a drama school in London.<br /><i>- IMDb Mini Biography By: Anonymous</i></div>
+				</div>
+				<div id='bombur' class='castCrew'>
+    			Stephen Hunter as Bombur: 
+				<img src='Images/bombur.jpg' class='backgroundImage' alt='Bombur' />
+				<div>Stephen Hunter was born in Wellington, New Zealand and was unwittingly cast as 'the clown' from a young age. The label clearly sat well with Stephen, who quickly developed a great sense of comic timing, and a reputation as the 'go to' funny guy. Very early in his career the camera beaconed. And after honing his skills on New Zealand Television, Stephen headed for Australia.<br /><i>- IMDb Mini Biography By: Stephen Hunter</i></div>
+				</div>
+				<div id='fili' class='castCrew'>
+    			Dean O'Gorman as Fili: 
+				<img src='Images/fili.jpg' class='backgroundImage' alt='Fili' />
+				<div>Dean O'Gorman was born on December 1, 1976 in Auckland, New Zealand. He is an actor, known for The Hobbit: An Unexpected Journey (2012), The Hobbit: The Desolation of Smaug (2013) and Young Hercules (1998).<br /><i>-IMDb</i></div>
+				</div>
+				<div id='kili' class='castCrew'>
+    			Aidan Turner as Kili: 
+				<img src='Images/kili.jpg' class='backgroundImage' alt='Kili' />
+				<div>Aidan Turner was born in 1983 in Dublin. In 2008 Turner starred in popular Irish TV drama The Clinic for 2 series. During this time Aidan appeared as Mitchell in the BBC hit show Being Human which he starred in for 3 series. This was followed by the BBC's Desperate Romantic's in which Turner played Dante Gabriel Rossetti. In 2011, Peter Jackson cast Aidan in the role of Kili in JRR Tolkien's The Hobbit. The Hobbit trilogy filmed for 14 months in New Zealand.<br /><i>- IMDb Mini Biography By: Anonymous</i></div>
+				</div>
+				<div id='oin' class='castCrew'>
+    			John Callen as Oin: 
+				<img src='Images/oin.jpg' class='backgroundImage' alt='Oin' />
+				<div>John has worked for 40 years as a professional actor, director and writer in theatre, radio, film and television. He has performed in or directed more than 100 stage productions and more than two dozen television series, and narrated close to 150 documentaries.<br /><i>- IMDb Mini Biography By: John Callen</i></div>
+				</div>
+				<div id='gloin' class='castCrew'>
+    			Peter Hambleton as Gloin: 
+				<img src='Images/gloin.jpg' class='backgroundImage' alt='Gloin' />
+				<div>Peter Hambleton is an actor, known for The Hobbit: An Unexpected Journey (2012), The Hobbit: The Desolation of Smaug (2013) and The Last Tattoo (1994).<br />-IMDb</div>
+				</div>
+				<div id='nori' class='castCrew'>
+    			Jed Brophy as Nori: 
+				<img src='Images/nori.jpg' class='backgroundImage' alt='Nori' />
+				<div>Jed Brophy (born 1963) is a film actor from New Zealand. He has appeared in several of Peter Jackson's films, including Braindead, Heavenly Creatures, The Lord of the Rings film trilogy, King Kong, and will also appear as the dwarf Nori in The Hobbit films.<br /><i>- Biography Source: wikipedia.org, License: Attribution-ShareAlike 3.0</i></div>
+				</div>
+				<div id='dori' class='castCrew'>
+    			Mark Hadlow as Dori: 
+				<img src='Images/dori.jpg' class='backgroundImage' alt='Dori' />
+				<div>Actor, comedian, singer, writer, producer, director - Mark Hadlow is one of New Zealand's most prominent actors and entertainers. He is driven by a passion for performance: 130 plays, musical theatre, dozens of film appearances, television series, commercials and radio voice-overs in the thousands.<br /><i>- IMDb Mini Biography By: Mark Hadlow</i></div>
+				</div>
+				<div id='ori' class='castCrew'>Adam Brown as Ori: 
+				<img src='Images/ori.jpg' class='backgroundImage' alt='Ori' />
+				<div>Adam, an English actor who was born in Hungerford, Berkshire. Adam Brown's first film role came when he was cast as the dwarf Ori in the three-part adaptation of J.R.R. Tolkien's The Hobbit. He trained in Performing Arts at Middlesex University with John Wright.<br /><i>- IMDb Mini Biography By: United Artist London</i></div>
+				</div>
+				<div id='legolas' class='castCrew'>Orlando Bloom as Legolas: 
+				<img src='Images/legolas.jpg' class='backgroundImage' alt='Legolas' />
+				<div>Orlando Bloom was born in England 1977. Orlando attended St. Edmunds School in Canterbury. always having idolized larger-than-life characters Orlando gravitated towards serious acting. At the age of 16, he joined the National Youth Theatre in London. Among others he also appeared in the critically acclaimed movie Wilde (1997).<br /><i>- IMDb Mini Biography By: J.W. Braun</i></div>
+				</div>
+				<div id='tauriel' class='castCrew'>Evangeline Lilly as Tauriel: 
+				<img src='Images/taurielSml.png' class='backgroundImage' alt='Tauriel' />
+				<div>Evangeline Lilly, born in Fort Saskatchewan, Alberta in 1979, was discovered on the streets of Kelowna, British Columbia by the famous Ford modeling agency. Although she initially decided to pass on a modeling career, she went ahead and signed with Ford anyway, to help pay for her University of British Columbia tuition and expenses.<br /><i>- IMDb Mini Biography By: RaDragon</i></div>
+				</div>
+				<div id='thranduil' class='castCrew'>Lee Pace as Thranduil: 
+				<img src='Images/thranduil.jpg' class='backgroundImage' alt='Thranduil' />
+				<div>In 2003, Lee Pace starred in the Sundance hit, Soldier's Girl (2003). His breakthrough performance garnered him nominations for both the Golden Globes and the Independent Spirit Award, and he won a Gotham Award for Outstanding Breakthrough Performance.<br /><i>- IMDb Mini Biography By: slodwick</i></div>
+				</div>
+				<div id='smaug' class='castCrew'>Benedict Cumberbatch voices Smaug: 
+				<img src='Images/smaugHead.jpg' class='backgroundImage' alt='Smaug' />
+				<div>Benedict Timothy Carlton Cumberbatch was born and raised in London. He attended Brambletye School and Harrow School. Whilst at Harrow, he had an arts scholarship and painted large oil canvases. It's also where he began acting. After he finished school, he took a year off to teach English in a Tibetan monastery. On his return, he studied drama at Manchester University. He continued his training with a one-year course at the London Academy of Music and Dramatic Art.<br /><i>- IMDb Mini Biography By: Kad</i></div>
+				</div>
+				<div id='radagast' class='castCrew'>Sylvester McCoy as Radagast the Brown: 
+				<img src='Images/radagast.jpg' class='backgroundImage' alt='Radagast' />
+				<div>Sylvester McCoy was born in Dunoon, Scotland. Before becoming an actor, as Percy Smith he trained as a priest, sold insurance and acted as a bodyguard for the Rolling Stones. He started his acting career as a part of the Ken Campbell Roadshow. Sylvester McCoy is married with two sons.<br /><i>- IMDb Mini Biography By: Anonymous</i></div>
+				</div>
+				<div id='bard' class='castCrew'>Luke Evans as Bard: 
+				<img src='Images/bard.jpg' class='backgroundImage' alt='Bard' />
+				<div>Luke Evans was born in Pontypool, Wales but grew up in Aberbargoed, South Wales. He moved to Cardiff at the age 17. He then won a scholarship to the London Studio Centre, and graduated in 2000. He starred in many of London's West End theatre productions. In 2009, he landed the role of Apollo in Clash of the Titans (2010). Then, he quickly landed roles in Sex &amp; Drugs &amp; Rock &amp; Roll (2010), Robin Hood (2010), Tamara Drewe (2010), Blitz (2010), The Three Musketeers (2011), Ashes (2011), Immortals (2011) and The Raven (2012). He's also scheduled to star in The Amateur American (2012), Only God Forgives (2012) and No One Lives (2012).<br /><i>- IMDb Mini Biography By: gapal</i></div>
+				</div>
+				<div id='azog' class='castCrew'>Manu Bennett as Azog the Defiler: 
+				<img src='Images/azog.jpg' class='backgroundImage' alt='Azog' />
+				<div>Gracing international covers such as Muscle and Fitness and Men's Health Manu Bennett is capturing the attention of filmmakers and fans with his extraordinary presence and talent. Manu is best known for his portrayal of powerful gladiator Crixus on Starz hit series Spartacus. Manu can also be seen in the CW network hit, Arrow, playing legendary comic book character, Slade Wilson.<br /><i>- IMDb Mini Biography By: Anonymous</i></div>
+				</div>
+				<div id='bolg' class='castCrew'>Lawrence Makoare as Bolg son of Azog: 
+				<img src='Images/bolg1.jpg' class='backgroundImage' alt='Bolg' />
+				<div>Lawrence Makoare (born 20 March 1968) is a New Zealand-born Maori actor, probably best known for his roles in The Lord of the Rings film trilogy. In The Fellowship of the Ring he played the Uruk-hai leader Lurtz, and in The Return of the King he played the Witch-king of Angmar as well as Gothmog, the Orc commander at the Battle of the Pelennor Fields.<br /><i>- Biography Source: wikipedia.org, License: Attribution-ShareAlike 3.0</i></div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div id='gallery' style='display: none;'>
+			<div class='img'>
+  			<a href='promo1_large.html'>
+  			<img class='thumbnail' src='Images/promo1.png' alt='Promo Image' />
+  			</a>
+			</div>
+			<div class='img'>
+   			<a href='promo2_large.html'>
+  			<img class='thumbnail' src='Images/promo2.jpg' alt='Promo Image' />
+  			</a>
+			</div>
+			<div class='img'>
+   			<a href='promo3_large.html'>
+  			<img class='thumbnail' src='Images/promo3.jpg' alt='Promo Image' />
+  			</a>
+			</div>
+			<div class='img'>
+   			<a href='promo4_large.html'>
+  			<img class='thumbnail' src='Images/promo4.jpg' alt='Promo Image' />
+  			</a>
+			</div>
+			<div class='img'>
+   			<a href='promo5_large.html'>
+  			<img class='thumbnail' src='Images/promo5.jpg' alt='Promo Image' />
+  			</a>
+			</div>
+			<div class='img'>
+  			<a href='promo6_large.html'>
+  			<img class='thumbnail' src='Images/promo6.jpg' alt='Promo Image' />
+  			</a>
+			</div>
+			<div class='img'>
+  			<a href='promo7_large.html'>
+  			<img class='thumbnail' src='Images/promo7.jpg' alt='Promo Image' />
+  			</a>
+			</div>
+			<div class='img'>
+  			<a href='promo8_large.html'>
+  			<img class='thumbnail' src='Images/promo8.jpg' alt='Promo Image' />
+  			</a>
+			</div>
+			<div class='img'>
+  			<a href='promo9_large.html'>
+  			<img class='thumbnail' src='Images/promo9.jpg' alt='Promo Image' />
+  			</a>
+			</div>
+			<div class='img'>
+  			<a href='promo10_large.html'>
+  			<img class='thumbnail' src='Images/promo10.jpg' alt='Promo Image' />
+  			</a>
+			</div>
+		</div>
+		<div id='shopping' style='display: none;'>
+			<img id='background' src='Images/shopping.png' alt='Image of the dragon Smaug' />
+		</div>
+		<div id='videos' style='display: none;'>
+			<div class='thumbnails'>
+				<div id='video1' class='clipImg'>
+					<a onclick='loadTrailer1()' href='#'>
+					<img class='videoThumbnail' src='Images/Trailer1.png' alt='Trailer 1 avatar image' />
+					</a>
+				</div>
+				<div class='clipImg'>
+					<a onclick='loadTrailer2()' href='#'>
+					<img class='videoThumbnail' src='Images/Trailer2.png' alt='Promo Image' />
+					</a>
+				</div>
+				<div class='clipImg'>
+					<a onclick='loadTrailer3()' href='#'>
+					<img class='videoThumbnail' src='Images/Trailer3.png' alt='Promo Image' />
+					</a>
+				</div>
+				<div class='clipImg'>
+					<a onclick='loadTrailer4()' href='#'>
+					<img class='videoThumbnail' src='Images/Trailer4.jpg' alt='Promo Image' />
+					</a>
+				</div>
+				<div class='clipImg'>
+					<a onclick='loadTrailer5()' href='#'>
+					<img class='videoThumbnail' src='Images/Trailer5.jpg' alt='Promo Image' />
+				</a>
+				</div>
+				<div class='clipImg'>
+					<a onclick='loadTrailer6()' href='#'>
+					<img class='videoThumbnail' src='Images/Trailer6.jpg' alt='Promo Image' />
+					</a>
+				</div>
+			</div>
+			<div>
+				<iframe id='video' src='http://www.youtube.com/embed/fnaojlfdUbs?feature=player_embedded' frameborder='0' allowfullscreen='' />
+			</div>
+		</div>
+		<div id='hall' style='display: none;'>
+			<div class='placeholder'>Hall of Fame Placeholder</div>
+		</div>
+		<div id='signIn' style='display: none;'>
+			<form method='post' action='index.php'>
+			<div>
+			<label class='login' for='username'>User Name:</label><input type='text' id='username' name='username' />
+			<label class='login' for='password'>Password:</label><input type='password' id='password' name='password' />
+			<input type='submit' value='Login' />
+			</div>
+			</form>
+		</div>
+	</div>
+	</div>
+</div>
+<div class='footer'>
+		<div class='creditsContainer'>
+		<img id='credits' src='Images/credits.png' alt='NEW LINE CINEMA and METRO-GOLDWYN PICTURES present a WINGNUT FILMS production THE HOBBIT: THE DESOLATION OF SMAUG, IAN McKELLEN MARTIN FREEMAN RICHARD ARMITAGE BENEDICT CUMBERPATCH EVANGELINE LILLY LEE PACE LUKE EVANS KEN SCOTT JAMES NESBITT and ORLANDO BLOOM as LEGOLAS music by HOWARD SHORE co-producers PHILLIPA BOYENS EILEEN MORAN armour, weapons, creatures, and special makeup by WETA WORKSHOP LTD. visual effects and anmation by WETA DIGITAL LTD senior visual effects supervisor JOE LETTERI edited by JABEZ OLSSEN production designer DAN HENNAH director of photography ANDREW LESNIE, acs, asc executive producers ALAN HORN TOBY EMERICK KEN KAMINS CAROLYN BLACKWOOD produced by CAROLYNNE CUNNINGHAM ZANE WEINER FRAN WALSH PETER JACKSON based on the novile by J.R.R. TOLKIEN screenplay by FRAN WALSHJ &amp; PHILLIPA BOYENS &amp;d GUILLERMO del TORO directed by PETER JACKSON, MGM, New Line Cinema, thehobbit.com #theHobbit facebook.com/TheHobbitMovie, rated: PG-13' />
+		</div>
+</div>
+</body>
+<script>
+	$(document).ready(function(){
+		event.preventDefault();
+		$('#castCrew').hide();
+		$('#gallery').hide();
+		$('#shopping').hide();
+		$('#videos').hide();
+		$('#hall').hide();
+		$('#signIn').hide();
+		$('#home').show();
+	});
+	
+	$('.homeBtn').click(function(){
+		event.preventDefault();
+		$('#castCrew').hide();
+		$('#gallery').hide();
+		$('#shopping').hide();
+		$('#videos').hide();
+		$('#hall').hide();
+		$('#signIn').hide();
+		$('#home').show("slide", { direction: "left" }, 1000);
+	});
+
+	$('#castCrewBtn').click(function(){
+		event.preventDefault();
+		$('#castCrew').show("slide", { direction: "left" }, 1000);
+		$('#gallery').hide();
+		$('#shopping').hide();
+		$('#videos').hide();
+		$('#hall').hide();
+		$('#signIn').hide();
+		$('#home').hide();
+	});
+
+	$('#galleryBtn').click(function(){
+		event.preventDefault();
+		$('#castCrew').hide();
+		$('#gallery').show();
+		$('#shopping').hide();
+		$('#videos').hide();
+		$('#hall').hide();
+		$('#signIn').hide();
+		$('#home').hide();
+	});
+
+	$('#shoppingBtn').click(function(){
+		event.preventDefault();
+		$('#castCrew').hide();
+		$('#gallery').hide();
+		$('#shopping').show();
+		$('#videos').hide();
+		$('#hall').hide();
+		$('#signIn').hide();
+		$('#home').hide();
+	});
+
+	$('#videosBtn').click(function(){
+		event.preventDefault();
+		$('#castCrew').hide();
+		$('#gallery').hide();
+		$('#shopping').hide();
+		$('#videos').show();
+		$('#hall').hide();
+		$('#signIn').hide();
+		$('#home').hide();
+	});
+
+	$('#hallBtn').click(function(){
+		event.preventDefault();
+		$('#castCrew').hide();
+		$('#gallery').hide();
+		$('#shopping').hide();
+		$('#videos').hide();
+		$('#hall').show();
+		$('#signIn').hide();
+		$('#home').hide();
+	});
+
+	$('#signInBtn').click(function(){
+		event.preventDefault();
+		$('#castCrew').hide();
+		$('#gallery').hide();
+		$('#shopping').hide();
+		$('#videos').hide();
+		$('#hall').hide();
+		$('#signIn').show();
+		$('#home').hide();
+	});
+	
+	function goIndex() {
+		window.location.replace('index.php');
+	}
+</script>
+</html>
