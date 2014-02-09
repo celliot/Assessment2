@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	include "Functions\\myFunctions.php";
+	include "Functions/myFunctions.php";
 	$logInText = "<a id='signin' href='#' onclick='loadSignIn()'>Sign In</a><a id='register' href='register.html'>Register</a>";
 	
 	
@@ -16,7 +16,7 @@
 			$logInText = "Welcome ".ucfirst($_SESSION["loggedInUser"]);
 		}
 	}
-	$indexPage = fopen("HTML\\index.html", "r");
+	$indexPage = fopen("HTML/index.html", "r");
 	
 	while(!feof($indexPage)){
 		$line = fgets($indexPage);

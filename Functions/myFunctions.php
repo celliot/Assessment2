@@ -14,7 +14,7 @@
 	}
 	
 	function getUsers() {
-		$userFileRead = fopen("Users\\users.txt", "r");
+		$userFileRead = fopen("Users/users.txt", "r");
 		$users = array();
 		
 		$userNum = 0;

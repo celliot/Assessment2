@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	
-	include "Functions\\myFunctions.php";
+	include "Functions/myFunctions.php";
 	$notSet = array();
 	
 	$username = "";
