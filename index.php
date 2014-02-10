@@ -27,12 +27,25 @@
 		}
 	}
 	$indexPage = fopen("HTML/index.html", "r");
+	 
+	$products = "";
+	$productArray = getProducts();
+	if(!empty($productArray)){
+		$products = $products."<div>";
+		for($i = 0; $i < count($productArray); ++$i) {
+			$products = $products."<label class='cartList' for='".$productArray[$i][3]."'>".$productArray[$i][1]."</label><input type='number' id='".$productArray[$i][3]."' size='6' value='0'></input><br>";
+		}
+		$products = $products."</div>";
+	}
+	
 	
 	while(!feof($indexPage)){
 		$line = fgets($indexPage);
 		if(putAfterLine($line, "<div class='writing' id='registration'>", $logInText)) continue;
 		if(putAfterLine($line, "<li><a id='hallBtn' class='menubarbtn' href='#'>Hall of Fame</a></li>", $shoppingLink)) continue;
 		if(putAfterLine($line, "<div id='shopping'>", $shoppingPage)) continue;
+		if(putAfterLine($line, "<p><a href='#' class='shoppingBtn'>Back to Shopping</a></p>", $products)) continue;
+		
 		echo $line;
 	}
 

@@ -1,4 +1,16 @@
 <?php
+	function getProducts() {
+		$shoppingFile = fopen("products.txt", "r");
+		$productInfo = array();
+		$productQty = 0;
+		
+		while (!feof($shoppingFile)) {
+			$productInfo[$productQty] = explode("-", fgets($shoppingFile));
+			++$productQty;
+		}
+		return $productInfo;
+	}
+	
 	function getShoppingPage() {
 		$shoppingFile = fopen("products.txt", "r");
 		$shoppingPage = "";
@@ -13,7 +25,7 @@
   			</a>
   			<p class='underPic'>".$productInfo[1]."</p>
   			<p class='underPic'>".$productInfo[2]."</p>
-  			<p class='underPic'><a href='#' id='".$productInfo[3]."' class='cart' >Add to Cart</a></p>
+  			<p class='underPic'><a href='#' name='".$productInfo[3]."' class='cart' >Add to Cart</a></p>
   			</div>";
 		}
   		return $shoppingPage;

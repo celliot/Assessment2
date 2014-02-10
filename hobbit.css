@@ -5,9 +5,14 @@ body {
 	font-style: normal; 
 	color: #e95a22;
 }
-	
+
+
 label, input {
   display: inline-block;
+}
+
+label.cartList {
+	min-width: 650px;	
 }
 
 label.login {

@@ -287,7 +287,8 @@
 			<div class='placeholder'>Hall of Fame Placeholder</div>
 		</div>
 		<div id='cart'>
-			<a href='#' class='shoppingBtn'>Back to Shopping</a>
+			<p><a href='#' class='shoppingBtn'>Back to Shopping</a></p>
+			
 		</div>
 		<div id='signIn'>
 			<form method='post' action='index.php'>
@@ -415,8 +416,16 @@
 		$('#signIn').hide();
 		$('#cart').show();
 		$('#home').hide();
+		if ($(this).hassAttr('name')){
+			$pid = $(this).attr('name');
+			$idAttr = '#';
+			$idAttr = $idAttr.concat($pid);
+		  	$currentVal = $($idAttr).attr('value');
+		 	$newVal = $currentVal + 1;
+			$($idAttr).attr('value', $newVal);
+		}
 	});
-	
+
 	function goIndex() {
 		window.location.replace('index.php');
 	}
