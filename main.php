@@ -41,11 +41,11 @@
 	
 	$orderSummary = "<p>Order Summary</p>";
 	if(!empty($user)){
-		$orderSummary = $orderSummary."<br>Name: ".$user["firstname"]." ".$user["surname"];
-		$orderSummary = $orderSummary."<br>Email: ".$user["email"];
+		if(!empty($user["firstname"]) && !empty($user["surname"]))$orderSummary = $orderSummary."<br>Name: ".$user["firstname"]." ".$user["surname"];
+		if(!empty($user["email"]))$orderSummary = $orderSummary."<br>Email: ".$user["email"];
 		$orderSummary = $orderSummary."<br>Credit Card Number: XXXX-XXXX-XXXX-XXXX";
 		$orderSummary = $orderSummary."<br>Expiry Date: XX/XX";
-		$orderSummary = $orderSummary."<br>Billing Address: ".$user["address"]."<br>";
+		if(!empty($user["address"])) $orderSummary = $orderSummary."<br>Billing Address: ".$user["address"]."<br>";
 	}
 	
 	while(!feof($indexPage)){

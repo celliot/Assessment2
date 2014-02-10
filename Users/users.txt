@@ -1,0 +1,13 @@
+firstname John
+surname Doe
+username hobbitUser
+password 123qwe!@#
+mob 11
+yob 1911
+genderMale on
+email john.doe@email.com
+address 4 location street, Townsville, QLD 4810
+membershipType Basic
+memberDuration Annual
+startDate 2014-02-10
+

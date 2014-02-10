@@ -70,7 +70,7 @@
 		fclose($userFile);
 		
 		//to auto log in after registration form successful
-		echo "<form action='index.php' method='post' name='userForm'>";
+		echo "<form action='main.php' method='post' name='userForm'>";
 		echo "<input type='hidden' name='username' value='".$username."'>";
 		echo "<input type='hidden' name='password' value='".$password."'></form>";
 		echo "<script type='text/javascript'> document.userForm.submit(); </script>";

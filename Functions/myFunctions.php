@@ -33,12 +33,13 @@
 
 	function getUser($username, $password) {
 		$allUsers = getUsers();
-		
-		for($i = 0; $i < count($allUsers); ++$i) {
-			if ($allUsers[$i]["username"] == $username){
-				 if ($allUsers[$i]["password"] == $password) {
-					$user = $allUsers[$i];
-				} else $user = $allUsers[$i]["username"];
+		if(!empty($allUsers)) {
+			for($i = 0; $i < count($allUsers); ++$i) {
+				if (!empty($allUsers[$i]["username"]) && $allUsers[$i]["username"] == $username){
+				 	if (!empty($allUsers[$i]["password"]) && $allUsers[$i]["password"] == $password) {
+						$user = $allUsers[$i];
+					} else $user = $allUsers[$i]["username"];
+				}
 			}
 		}
 		return isset($user) ? $user : array();
