@@ -13,7 +13,7 @@
   			</a>
   			<p class='underPic'>".$productInfo[1]."</p>
   			<p class='underPic'>".$productInfo[2]."</p>
-  			<a href='#' id='".$productInfo[3]."' class='underPic'>Add to Cart</a>
+  			<p class='underPic'><a href='#' id='".$productInfo[3]."' class='cart' >Add to Cart</a></p>
   			</div>";
 		}
   		return $shoppingPage;

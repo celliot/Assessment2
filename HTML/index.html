@@ -286,6 +286,9 @@
 		<div id='hall'>
 			<div class='placeholder'>Hall of Fame Placeholder</div>
 		</div>
+		<div id='cart'>
+			<a href='#' class='shoppingBtn'>Back to Shopping</a>
+		</div>
 		<div id='signIn'>
 			<form method='post' action='index.php'>
 			<div>
@@ -311,6 +314,7 @@
 		$('#videos').hide();
 		$('#hall').hide();
 		$('#signIn').hide();
+		$('#cart').hide();
 		$('#home').show();
 	});
 	
@@ -321,6 +325,7 @@
 		$('#videos').hide();
 		$('#hall').hide();
 		$('#signIn').hide();
+		$('#cart').hide();
 		$('#home').show();
 	});
 
@@ -331,6 +336,7 @@
 		$('#videos').hide();
 		$('#hall').hide();
 		$('#signIn').hide();
+		$('#cart').hide();
 		$('#home').hide();
 	});
 
@@ -341,6 +347,7 @@
 		$('#videos').hide();
 		$('#hall').hide();
 		$('#signIn').hide();
+		$('#cart').hide();
 		$('#home').hide();
 	});
 
@@ -351,6 +358,18 @@
 		$('#videos').hide();
 		$('#hall').hide();
 		$('#signIn').hide();
+		$('#cart').hide();
+		$('#home').hide();
+	});
+
+	$('.shoppingBtn').click(function(){
+		$('#castCrew').hide();
+		$('#gallery').hide();
+		$('#shopping').show();
+		$('#videos').hide();
+		$('#hall').hide();
+		$('#signIn').hide();
+		$('#cart').hide();
 		$('#home').hide();
 	});
 
@@ -361,6 +380,7 @@
 		$('#videos').show();
 		$('#hall').hide();
 		$('#signIn').hide();
+		$('#cart').hide();
 		$('#home').hide();
 	});
 
@@ -371,6 +391,7 @@
 		$('#videos').hide();
 		$('#hall').show();
 		$('#signIn').hide();
+		$('#cart').hide();
 		$('#home').hide();
 	});
 
@@ -381,6 +402,18 @@
 		$('#videos').hide();
 		$('#hall').hide();
 		$('#signIn').show();
+		$('#cart').hide();
+		$('#home').hide();
+	});
+	
+	$('.cart').click(function(){
+		$('#castCrew').hide();
+		$('#gallery').hide();
+		$('#shopping').hide();
+		$('#videos').hide();
+		$('#hall').hide();
+		$('#signIn').hide();
+		$('#cart').show();
 		$('#home').hide();
 	});
 	
