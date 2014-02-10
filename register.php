@@ -4,9 +4,15 @@
 	include "Functions/myFunctions.php";
 	$notSet = array();
 	
+	$noYob = -1000;
+	$minPasswordLength = 8;
+	$_POST["startDate"] = date('Y-m-d');
+	
 	$username = "";
 	$password = "";
-	
+	if (empty($_POST["yob"])) {
+		$_POST["yob"] = $noYob;
+	}
 	if (empty($_POST["firstname"])){
 		$notSet["firstname"] = "<strong>First Name is a required field</strong>";
 	}
@@ -20,14 +26,20 @@
 	}
 	if (empty($_POST["password"])){
 		$notSet["password"] = "<strong>Password is a required field</strong>";
-	} else { 
-		$password = $_POST["password"]; 
+	} else {
+		$password = $_POST["password"];
+		if (!ereg("[a-zA-Z!@#$%]*[0-9]+[a-zA-Z!@#$%]*[0-9]+[0-9a-zA-Z!@#$%]*", $password)) {
+			$notSet["password"] = "<strong>Password must be at least 8 characters long and contain at least 2 digits</strong>";
+		}
+		if (strlen($password) < 8) {
+			$notSet["password"] = "<strong>Password must be at least 8 characters long and contain at least 2 digits</strong>";
+		}
 	}
 	if (empty($_POST["email"])){
 		$notSet["email"] = "<strong>email is a required field</strong>";
-	} /*elseif (!ereg("^[a-zA-Z0-9_\.]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$", $_POST["email"])) {
+	} elseif (!ereg("^[a-zA-Z0-9_\.]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$", $_POST["email"])) {
 		$notSet["email"] = "<strong>invalid email address, please try again</strong>";
-	}*/
+	}
 	
 	$user = getUser($username, $password);
 		

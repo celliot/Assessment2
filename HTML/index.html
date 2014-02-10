@@ -23,9 +23,9 @@
 			<li><a class='homeBtn' href='#'>Home</a></li>
 			<li><a id='castCrewBtn' class='menubarbtn' href='#'>Cast &amp; Crew</a></li>
 			<li><a id='galleryBtn' class='menubarbtn' href='#'>Gallery</a></li>
-			<li><a id='shoppingBtn' class='menubarbtn' href='#'>Shopping</a></li>
 			<li><a id='videosBtn' class='menubarbtn' href='#'>Videos</a></li>
 			<li><a id='hallBtn' class='menubarbtn' href='#'>Hall of Fame</a></li>
+			<!--  shopping link dumped in by PHP if logged in -->
 		</ul>
 		</div>
 	</div>	
@@ -244,7 +244,7 @@
 			</div>
 		</div>
 		<div id='shopping'>
-			<img id='background' src='Images/shopping.png' alt='Image of the dragon Smaug' />
+			<!-- Shopping page placed by PHP on login -->
 		</div>
 		<div id='videos'>
 			<div class='thumbnails'>
@@ -305,7 +305,6 @@
 </div>
 <script type="text/javascript">
 	$(document).ready(function(){
-		event.preventDefault();
 		$('#castCrew').hide();
 		$('#gallery').hide();
 		$('#shopping').hide();
@@ -316,19 +315,17 @@
 	});
 	
 	$('.homeBtn').click(function(){
-		event.preventDefault();
 		$('#castCrew').hide();
 		$('#gallery').hide();
 		$('#shopping').hide();
 		$('#videos').hide();
 		$('#hall').hide();
 		$('#signIn').hide();
-		$('#home').show("slide", { direction: "left" }, 1000);
+		$('#home').show();
 	});
 
 	$('#castCrewBtn').click(function(){
-		event.preventDefault();
-		$('#castCrew').show("slide", { direction: "left" }, 1000);
+		$('#castCrew').show();
 		$('#gallery').hide();
 		$('#shopping').hide();
 		$('#videos').hide();
@@ -338,7 +335,6 @@
 	});
 
 	$('#galleryBtn').click(function(){
-		event.preventDefault();
 		$('#castCrew').hide();
 		$('#gallery').show();
 		$('#shopping').hide();
@@ -349,7 +345,6 @@
 	});
 
 	$('#shoppingBtn').click(function(){
-		event.preventDefault();
 		$('#castCrew').hide();
 		$('#gallery').hide();
 		$('#shopping').show();
@@ -360,7 +355,6 @@
 	});
 
 	$('#videosBtn').click(function(){
-		event.preventDefault();
 		$('#castCrew').hide();
 		$('#gallery').hide();
 		$('#shopping').hide();
@@ -371,7 +365,6 @@
 	});
 
 	$('#hallBtn').click(function(){
-		event.preventDefault();
 		$('#castCrew').hide();
 		$('#gallery').hide();
 		$('#shopping').hide();
@@ -382,7 +375,6 @@
 	});
 
 	$('#signInBtn').click(function(){
-		event.preventDefault();
 		$('#castCrew').hide();
 		$('#gallery').hide();
 		$('#shopping').hide();

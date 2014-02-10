@@ -133,6 +133,7 @@ div#menubar {
 	min-height: 490px;
 	width: 100%;
 	position: relative;
+	clear: both;
 }
 
 div#menubar ul li {
@@ -146,9 +147,12 @@ div#menubar ul li {
 	width: auto;
 	height: auto;
 }
-
+	
 .footer {
-	position: relative;
+	clear: both;
+}
+#logout {
+	padding-left: 10px;	
 }
 
 .creditsContainer {
