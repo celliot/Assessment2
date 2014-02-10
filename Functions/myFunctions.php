@@ -38,8 +38,7 @@
 			if ($allUsers[$i]["username"] == $username){
 				 if ($allUsers[$i]["password"] == $password) {
 					$user = $allUsers[$i];
-				}
-				$user = $allUsers[$i]["username"];
+				} else $user = $allUsers[$i]["username"];
 			}
 		}
 		return isset($user) ? $user : array();

@@ -289,6 +289,11 @@
 		<div id='cart'>
 			<p><a href='#' class='shoppingBtn'>Back to Shopping</a></p>
 			
+			<br></br><p><a href='#' class='acceptOrder'>Accept Order</a></p>			
+		</div>
+		<div id='orderSummary'>
+		
+			<a href='logout.php' id='logout'>logout</a>		
 		</div>
 		<div id='signIn'>
 			<form method='post' action='index.php'>
@@ -317,6 +322,7 @@
 		$('#signIn').hide();
 		$('#cart').hide();
 		$('#home').show();
+		$('#orderSummary').hide();
 	});
 	
 	$('.homeBtn').click(function(){
@@ -328,6 +334,7 @@
 		$('#signIn').hide();
 		$('#cart').hide();
 		$('#home').show();
+		$('#orderSummary').hide();
 	});
 
 	$('#castCrewBtn').click(function(){
@@ -339,6 +346,7 @@
 		$('#signIn').hide();
 		$('#cart').hide();
 		$('#home').hide();
+		$('#orderSummary').hide();
 	});
 
 	$('#galleryBtn').click(function(){
@@ -350,6 +358,7 @@
 		$('#signIn').hide();
 		$('#cart').hide();
 		$('#home').hide();
+		$('#orderSummary').hide();
 	});
 
 	$('#shoppingBtn').click(function(){
@@ -361,6 +370,7 @@
 		$('#signIn').hide();
 		$('#cart').hide();
 		$('#home').hide();
+		$('#orderSummary').hide();
 	});
 
 	$('.shoppingBtn').click(function(){
@@ -372,6 +382,7 @@
 		$('#signIn').hide();
 		$('#cart').hide();
 		$('#home').hide();
+		$('#orderSummary').hide();
 	});
 
 	$('#videosBtn').click(function(){
@@ -383,6 +394,7 @@
 		$('#signIn').hide();
 		$('#cart').hide();
 		$('#home').hide();
+		$('#orderSummary').hide();
 	});
 
 	$('#hallBtn').click(function(){
@@ -394,6 +406,7 @@
 		$('#signIn').hide();
 		$('#cart').hide();
 		$('#home').hide();
+		$('#orderSummary').hide();
 	});
 
 	$('#signInBtn').click(function(){
@@ -405,6 +418,7 @@
 		$('#signIn').show();
 		$('#cart').hide();
 		$('#home').hide();
+		$('#orderSummary').hide();
 	});
 	
 	$('.cart').click(function(){
@@ -416,6 +430,7 @@
 		$('#signIn').hide();
 		$('#cart').show();
 		$('#home').hide();
+		$('#orderSummary').hide();
 		if ($(this).hassAttr('name')){
 			$pid = $(this).attr('name');
 			$idAttr = '#';
@@ -424,6 +439,18 @@
 		 	$newVal = $currentVal + 1;
 			$($idAttr).attr('value', $newVal);
 		}
+	});
+
+	$('.acceptOrder').click(function(){
+		$('#castCrew').hide();
+		$('#gallery').hide();
+		$('#shopping').hide();
+		$('#videos').hide();
+		$('#hall').hide();
+		$('#signIn').hide();
+		$('#cart').hide();
+		$('#home').hide();
+		$('#orderSummary').show();
 	});
 
 	function goIndex() {
