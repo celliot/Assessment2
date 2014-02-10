@@ -3,8 +3,9 @@ body {
 	font-family: 'Leo Arrow';
 	font-weight: normal;
 	font-style: normal; 
+	color: #e95a22;
 }
-
+	
 label, input {
   display: inline-block;
 }

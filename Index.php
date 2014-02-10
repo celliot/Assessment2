@@ -14,7 +14,7 @@
 	if (!empty($_SESSION["loggedInUser"])) {
 		$logInText = "Welcome ".ucfirst($_SESSION['loggedInUser']);
 		$shoppingLink = "<li><a id='shoppingBtn' class='menubarbtn' href='#'>Shopping</a></li>";
-		$shoppingPage = file_get_contents("HTML/shopping.html");
+		$shoppingPage = getShoppingPage();
 	}
 	
 	if (!empty($_POST["username"]) && !empty($_POST["password"])) {
@@ -23,7 +23,7 @@
 			$_SESSION["loggedInUser"] = $_POST["username"];
 			$logInText = "Welcome ".ucfirst($_SESSION["loggedInUser"]."<a href='logout.php' id='logout'>logout</a>");
 			$shoppingLink = "<li><a id='shoppingBtn' class='menubarbtn' href='#'>Shopping</a></li>";
-			$shoppingPage = file_get_contents("HTML/shopping.html");
+			$shoppingPage = getShoppingPage();
 		}
 	}
 	$indexPage = fopen("HTML/index.html", "r");
@@ -33,7 +33,6 @@
 		if(putAfterLine($line, "<div class='writing' id='registration'>", $logInText)) continue;
 		if(putAfterLine($line, "<li><a id='hallBtn' class='menubarbtn' href='#'>Hall of Fame</a></li>", $shoppingLink)) continue;
 		if(putAfterLine($line, "<div id='shopping'>", $shoppingPage)) continue;
-		
 		echo $line;
 	}
 

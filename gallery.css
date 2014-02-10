@@ -8,6 +8,15 @@ div.img {
   text-align:center;
 }
 
+#topCenter {
+	padding-left: 32%;
+}
+
+.underPic {
+	display: block;
+	max-width: 160px;
+}
+
 div.img img {
   display:inline;
   margin:5px;

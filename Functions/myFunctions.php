@@ -1,4 +1,24 @@
 <?php
+	function getShoppingPage() {
+		$shoppingFile = fopen("products.txt", "r");
+		$shoppingPage = "";
+		if(!empty($shoppingFile)){
+			$shoppingPage = $shoppingPage."<p id='topCenter'><a href='#' class='cart'>View Cart</a></p>";
+		}
+		while (!feof($shoppingFile)){
+			$productInfo = explode("-", fgets($shoppingFile));
+			$shoppingPage = $shoppingPage."<div class='img'>
+  			<a href='#' class='".$productInfo[3]."'>
+  				<img class='thumbnail' src='Images/".$productInfo[0]."' alt='".$productInfo[1]."' />
+  			</a>
+  			<p class='underPic'>".$productInfo[1]."</p>
+  			<p class='underPic'>".$productInfo[2]."</p>
+  			<a href='#' id='".$productInfo[3]."' class='underPic'>Add to Cart</a>
+  			</div>";
+		}
+  		return $shoppingPage;
+  	}
+
 	function getUser($username, $password) {
 		$allUsers = getUsers();
 		
